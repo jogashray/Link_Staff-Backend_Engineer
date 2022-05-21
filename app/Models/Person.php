@@ -39,9 +39,6 @@ class Person extends Authenticatable
      *
      * @var array<string, string>
      */
-    /*protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];*/
 
     /**
      * Get all of the person's attach-posts.
