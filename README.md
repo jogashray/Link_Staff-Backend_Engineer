@@ -34,14 +34,14 @@
     Response: 200
     
 ## 4. Follow Person
-    HTTP Method : POST
+    HTTP Method : PUT/POST
     Authorization : <Bearer token>
     
     URL: api/follow/person/{personId}
     Response: 200
    
 ## 5. Follow page
-    HTTP Method : POST
+    HTTP Method : PUT/POST
     Authorization : <Bearer token>
     
     URL: api/follow/page/{pageId}

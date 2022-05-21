@@ -29,8 +29,8 @@ Route::middleware('auth:api')->group(function () {
     Route::post('person/attach-post', [PersonController::class, 'attachPost']);
     Route::get('person/feed', [PersonController::class, 'getFeeds']);
 
-    Route::post('follow/person/{persion_id}', [FollowController::class, 'followPerson']);
-    Route::post('follow/page/{page_id}', [FollowController::class, 'followPage']);
+    Route::match(['put', 'post'], 'follow/person/{persion_id}', [FollowController::class, 'followPerson']); 
+    Route::match(['put', 'post'], 'follow/page/{page_id}', [FollowController::class, 'followPage']);
 
 });
 
